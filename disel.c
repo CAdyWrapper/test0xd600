@@ -37,27 +37,27 @@
 
     #define SCA1_CAN_alpha_CMD_ERR		xb_can_get_sca1_bf_bit(MSG_CMD_ERR)
 
-    #define GROU_START_DI				xb_gpio_get_bf_bit(GROU_START_DI)
-    #define GROU_ERR_DI					xb_gpio_get_bf_bit(GROU_ERR_DI)
-    #define CAN_SCA1_BF_GROU			xb_can_get_sca1_bf_bit(GROU_CAN)
+    #define GROU_START_DI               xb_gpio_get_bf_bit(GROU_START_DI)
+    #define GROU_ERR_DI                 xb_gpio_get_bf_bit(GROU_ERR_DI)
+    #define CAN_SCA1_BF_GROU            xb_can_get_sca1_bf_bit(GROU_CAN)
 
-    #define CRAN_START_DI				xb_gpio_get_bf_bit(CRAN_START_DI)
-    #define CRAN_ERR_DI					xb_gpio_get_bf_bit(CRAN_ERR_DI)
-    #define CAN_SCA1_BF_CRAN			xb_can_get_sca1_bf_bit(CRAN_CAN)
+    #define CRAN_START_DI               xb_gpio_get_bf_bit(CRAN_START_DI)
+    #define CRAN_ERR_DI                 xb_gpio_get_bf_bit(CRAN_ERR_DI)
+    #define CAN_SCA1_BF_CRAN            xb_can_get_sca1_bf_bit(CRAN_CAN)
 
-    #define OPER_START_DI				xb_gpio_get_bf_bit(OPER_START_DI)
-    #define OPER_ERR_DI					xb_gpio_get_bf_bit(OPER_ERR_DI)
-    #define CAN_SCA1_BF_OPER			xb_can_get_sca1_bf_bit(OPER_CAN)
+    #define OPER_START_DI               xb_gpio_get_bf_bit(OPER_START_DI)
+    #define OPER_ERR_DI                 xb_gpio_get_bf_bit(OPER_ERR_DI)
+    #define CAN_SCA1_BF_OPER            xb_can_get_sca1_bf_bit(OPER_CAN)
 
-    #define SG_RM_MOD_DI 				false		// n/a
-    #define CAN_SG_STATUS_BF_NEWMSG		false		// n/a
-    #define CAN_SG_STATUS_BF_SG_RM_MOD	false		// n/a
-    #define CAN_SG_STATUS_BF_ERR		false		// n/a
+    #define SG_RM_MOD_DI                0		// n/a
+    #define CAN_SG_STATUS_BF_NEWMSG     0		// n/a
+    #define CAN_SG_STATUS_BF_SG_RM_MOD  0		// n/a
+    #define CAN_SG_STATUS_BF_ERR        0		// n/a
 
-    #define OS_REDY_DI 					false		// n/a
-    #define CAN_OS_STATUS_BF_NEWMSG		false		// n/a
-    #define CAN_OS_STATUS_BF_OS_REDY	false		// n/a
-    #define CAN_OS_STATUS_BF_ERR		false		// n/a
+    #define OS_REDY_DI                  0		// n/a
+    #define CAN_OS_STATUS_BF_NEWMSG     0		// n/a
+    #define CAN_OS_STATUS_BF_OS_REDY    0		// n/a
+    #define CAN_OS_STATUS_BF_ERR        0		// n/a
 
 #endif /* UNIT_TESTING */
 
@@ -78,8 +78,6 @@
 #define OS_REDY_DI_ErrCh    bitField.bit.os_redy_di_ErrCh
 #define OS_REDY_ErrT        bitField.bit.os_redy_ErrT
 #define OS_REDY_Valid       bitField.bit.os_redy_Valid
-
-
 
 
 DiselBitField bitField;
