@@ -35,7 +35,7 @@
     #include "gpio.h"
     #include "ctrl.h"
 
-    #define SCA1_CAN_alpha_CMD_ERR		xb_can_get_sca1_bf_bit(MSG_CMD_ERR)
+    #define SCA1_CAN_alpha_CMD_ERR      xb_can_get_sca1_bf_bit(MSG_CMD_ERR)
 
     #define GROU_START_DI               xb_gpio_get_bf_bit(GROU_START_DI)
     #define GROU_ERR_DI                 xb_gpio_get_bf_bit(GROU_ERR_DI)
@@ -106,12 +106,12 @@ void F08_01()
 
 uint8_t F08_02()
 {
-    return bitField.bit.sg_rm_mod_Valid;
+    return SG_RM_MOD_Valid;
 }
 
 uint8_t F08_03()
 {
-    return bitField.bit.os_redy_Valid;
+    return OS_REDY_Valid;
 }
 
 uint32_t F08_04()
